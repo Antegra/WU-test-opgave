@@ -1,0 +1,226 @@
+
+@font-face {
+    font-family: 'nunitoextralight';
+    src: url('fonts/nunito-variablefont_wght-webfont.woff2') format('woff2'),
+         url('fonts/nunito-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  margin: 0;
+}
+
+h1 { 
+  font-family: 'WebFont', Nunito, sans-serif; 
+  font-size: 30px;
+  font-weight: 150;
+  color: #E2E2E2;
+  margin-top: 0;
+
+}
+
+h4 { 
+  font-family: 'WebFont', Nunito, sans-serif; 
+  font-size: 20px;
+  font-weight: 100;
+  color: #E2E2E2;
+
+}
+
+p { 
+  font-family: 'WebFont', Nunito, sans-serif; 
+  color: #E2E2E2;
+}
+
+a { 
+  font-family: 'WebFont', Nunito, sans-serif;
+  text-decoration: none;
+  color: #E2E2E2;
+}
+
+
+
+/*Header*/
+
+header {
+  text-align: center;
+}
+
+nav {
+  background-color: #323232;
+  height: 95px;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+
+}
+
+
+.nav_grid {  display: grid;
+  grid-template-columns: 5fr 1.2fr 1.2fr 1.7fr 1.2fr 1.2fr 5fr;
+  grid-template-rows: 95px;
+  gap: 0px 0px;
+  top: 50%;
+  align-items: center;
+  text-align: center;
+
+  justify-content: center;
+  align-content: center;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "empty_left nav_portfolio nav_about mid nav_blog nav_contact nav_empty_right";
+}
+
+.nav_portfolio { 
+  grid-area: nav_portfolio; 
+
+  align-content: center;
+}
+
+.port {
+
+  align-content: center;
+  align-items: center;
+}
+
+.nav_about { 
+  grid-area: nav_about; 
+}
+
+.mid { 
+  grid-area: mid;
+}
+
+.empty_left { 
+  grid-area: empty_left;
+}
+
+.nav_blog { 
+  grid-area: nav_blog; 
+}
+
+.nav_contact { 
+  margin: auto;
+  grid-area: nav_contact; 
+
+}
+
+.nav_empty_right { 
+  grid-area: nav_empty_right; 
+}
+
+.nav_link {
+  font-family: 'WebFont', Nunito, sans-serif; 
+  color: #E2E2E2;
+  font-size: 14px;
+
+
+}
+
+
+
+
+/*General margin for the rest of the site*/
+
+.margin_non {
+  margin-right: 200px;
+  margin-left: 200px;
+
+}
+
+/*Portfolio*/
+
+.portfolio {
+  height: 400px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+
+}
+
+
+
+/*About*/
+
+.about {
+  background-color: #2DB398;
+  height: 525px;
+}
+
+.about_grid {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 525px;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "about_hex about_name"
+    "about_hex about_title"
+    "about_hex about_text";
+}
+
+.about_hex { 
+  grid-area: about_hex;
+  width: 277px;
+ }
+
+.about_name { grid-area: about_name; }
+
+.about_title { grid-area: about_title; }
+
+.about_text { grid-area: about_text; }
+
+.about_title h4 {
+  
+  color: #24A88B;
+}
+
+/*Contact*/
+
+.contact {
+  background-color: #323232;
+  height: 870px;
+}
+
+.contact_grid {  display: grid;
+  grid-template-columns: 1fr 0.1fr 0.5fr;
+  grid-template-rows: 0.2fr 0.2fr 0.15fr 0.15fr 0.15fr 15fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "contact_intro contact_intro ."
+    "contact_intro_small contact_intro_small ."
+    "contact_name contact_name contact_text"
+    "contact_email contact_email contact_text"
+    "contact_subject contact_subject contact_text"
+    "contact_message contact_message contact_direction"
+    ". contact_send .";
+}
+
+.contact_send { grid-area: contact_send; }
+
+.contact_message { grid-area: contact_message; }
+
+.contact_subject { grid-area: contact_subject; }
+
+.contact_email { grid-area: contact_email; }
+
+.contact_name { grid-area: contact_name; }
+
+.contact_intro { grid-area: contact_intro; }
+
+.contact_intro_small { grid-area: contact_intro_small; }
+
+.contact_text { grid-area: contact_text; }
+
+.contact_direction { grid-area: contact_direction; }
+
+
+.contact_form {
+
+}
